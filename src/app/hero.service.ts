@@ -14,7 +14,7 @@ const httpOptions = {
 @Injectable({providedIn: 'root'})
 export class HeroService {
 
-	private heroesUrl = 'csce.uark.edu/~jolds/angular-tour-of-heroes/heroes';  // URL to web api
+	private heroesUrl = 'heroes';  // URL to web api
 
 	constructor(
 		private http: HttpClient,
@@ -23,11 +23,9 @@ export class HeroService {
 
 	/** GET heroes from the server */
 	getHeroes(): Observable<Hero[]> {
-		return this.http.get<Hero[]>(this.heroesUrl)
-			.pipe(
-				tap(_ => this.log('fetched heroes')),
+		return this.http.get<Hero[]>(this.heroesUrl).pipe(tap(_ => this.log('fetched heroes')),
 				catchError(this.handleError<Hero[]>('getHeroes', []))
-			);
+		);
 	}
 
 	/** GET hero by id. Return `undefined` when id not found */

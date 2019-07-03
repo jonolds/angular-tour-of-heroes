@@ -1,3 +1,18 @@
+<!--<div *ngIf="hero">-->
+<!--    <h2>{{hero.name | uppercase}} Details</h2>-->
+<!--    <div><span>id: </span>{{hero.id}}</div>-->
+<!--    <div>-->
+<!--        <label>name:-->
+<!--            <input [(ngModel)]="hero.name" placeholder="name"/>-->
+<!--        </label>-->
+<!--&lt;!&ndash;        <label>bday:&ndash;&gt;-->
+<!--&lt;!&ndash;            <input [(ngModel)]="hero.bday" placeholder="bday"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </label>&ndash;&gt;-->
+<!--    </div>-->
+<!--    <button (click)="goBack()">go back</button>-->
+<!--    <button (click)="save()">save</button>-->
+<!--</div>-->
+
 <div *ngIf="hero">
     <h2>{{hero.name | uppercase}} Details</h2>
     <div><span>id: </span>{{hero.id}}</div>
@@ -5,9 +20,6 @@
         <label>name:
             <input [(ngModel)]="hero.name" placeholder="name"/>
         </label>
-<!--        <label>bday:-->
-<!--            <input [(ngModel)]="hero.bday" placeholder="bday"/>-->
-<!--        </label>-->
     </div>
     <button (click)="goBack()">go back</button>
     <button (click)="save()">save</button>
