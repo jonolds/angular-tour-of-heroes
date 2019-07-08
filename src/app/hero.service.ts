@@ -15,9 +15,7 @@ export class HeroService {
 
 	private heroesUrl = 'api/heroes';  // URL to web api
 
-	constructor(
-		private http: HttpClient,
-		private messageService: MessageService) { }
+	constructor(private http: HttpClient, private messageService: MessageService) { }
 
 	/** GET heroes from the server */
 	getHeroes(): Observable<Hero[]> {
