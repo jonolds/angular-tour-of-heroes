@@ -6,7 +6,7 @@
 		"sourceMap": true,
 		"declaration": false,
 		"downlevelIteration": true,
-		"module": "esnext",
+		"module": "es2015",
 		"moduleResolution": "node",
 		"experimentalDecorators": true,
 		"importHelpers": true,
@@ -18,9 +18,10 @@
 			"es2018",
 			"dom"
 		]
-	},
-	"angularCompilerOptions": {
-		"enableIvy": true,
-		"allowEmptyCodegenFiles": true
 	}
+//	,
+//	"angularCompilerOptions": {
+//		"enableIvy": true,
+//		"allowEmptyCodegenFiles": true
+//	}
 }
